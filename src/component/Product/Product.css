@@ -1,0 +1,27 @@
+.product {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.product img {
+  margin-right: 10px;
+}
+
+.product .product-details {
+  margin-left: 15px;
+}
+
+.mainBtn {
+  background: #fbc309;
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #bd9205;
+  margin-bottom: 10px;
+}
+
+.mainBtn:hover {
+  cursor: pointer;
+  background: rgb(240, 226, 107);
+}
