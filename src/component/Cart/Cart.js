@@ -4,7 +4,11 @@ import "./Cart.css";
 
 const Cart = (props) => {
   const price = props.cart;
-  const totalPrice = price.reduce((total, current) => total + current.price, 0);
+  console.log(price);
+  const totalPrice = price.reduce(
+    (total, current) => total + current.price * current.quantity,
+    0
+  );
 
   let shipping = 12.99;
   if (props.cart.length == 0) {
